@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    canvas {
+      position: absolute;
+    }
+    #video{
+
+border: 1px solid red;
+background-color: black;
+}
+.main-header {
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+display: flex;
+background: white;
+align-items: center;
+justify-content: space-around;
+flex-flow: row wrap;
+}
+
+.main-header__logo {
+  text-decoration: none;
+}
+
+.main-header__logo img {
+  height: 5rem;
+}
+
+.main-header__items {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-header__item {
+  margin: 1rem;
+}
+
+.main-header__item a {
+  color: black;
+}
+
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <div class="main-header__logo">
+      <a href="#"><img src="smartclass-mini.png" alt="logo"></a>
+    </div>
+  <div class="main-header__logo" style="text-align: end; font-size: 2rem;padding-left: 23rem;">
+    <p style="font-family: calibri; color: #0e467b;">MODULE NHẬN DẠNG CẢM XÚC HỌC SINH</p>
+  </div>
+
+    <div class="main-header__logo" style="text-align: end">
+      <a href="https://eyepro.vn/"><img src="Logo 1.png" style="width: 30%;height: 30%;" alt="logo"></a>
+      <!-- <p class="main-header__items" style="font-size: 1.7rem;">Nhận dạng cảm xúc học sinh</p> -->
+
+    </div>
+
+</header>
+<div class="flex-column">
+  <div class="row">
+    <div class="col-md-12">
+      <video id="video" width="1080" height="720" autoplay muted ></video>
+      </div>
+  </div>
+</div>
+  <div>
+
+</body>
+</html>
